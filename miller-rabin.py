@@ -28,7 +28,6 @@ print("Descomposicion: n=1+2^{0:d}*{1:d}".format(s, t))
 a = 2
 temp_a = (a**t) % n
 i = 0
-r = 10
 
 print("Prueba inicial a^t: {0:d}".format(temp_a))
 #Test de decision
@@ -37,7 +36,7 @@ if temp_a == 1 or temp_a == n-1:
     sys.exit()
 
 else:
-    while i < r:
+    while i < s-1:
         temp_a = (temp_a**2) % n
         print("Iteracion {0:d}: {1:d}".format(i, temp_a))
         if temp_a == n-1:
